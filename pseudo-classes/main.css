@@ -1,0 +1,198 @@
+/* CSS Document */
+
+* {
+  margin: 0;
+	padding: 0;
+  }
+.container {
+  width: 96%;
+  margin: 10px auto;
+  padding: 0;
+	}
+body{
+  color: #333;
+  }
+p {} 
+ul, li {
+  list-style: none;
+  font-family: "Arial Black", "Arial Bold", Arial, Helvetica, sans-serif;
+  }  
+a{
+  text-decoration: none;
+  }   
+header {
+	height: auto;
+  background-color: #999;
+  }
+header h1 {
+  padding: 4px;
+  }
+/* ---------------- nav ---------------- */
+#mainnav {
+  background: #333;
+	font-weight: bold;
+	text-transform:uppercase;
+  letter-spacing: .05em;
+  }
+#mainnav ul li {}
+#mainnav ul li a { 
+	display: block;
+	float: left;
+  padding: 10px;
+  }
+/* --- anchor pseudo classes (often used in navs)--- */
+
+/* unvisited link */
+#mainnav ul li a:link {
+  background-color: #333;
+  }
+/* visited link */
+#mainnav ul li a:visited {
+  color: #999;
+  }
+/* mouse over link */
+#mainnav ul li a:hover {
+  color: #FF6A00;
+  background: #222;
+  }
+/* selected link */
+#mainnav ul li a:selected {
+  color: #FF0064;
+  }  
+/* ---------------- highlight ---------------- */
+a.highlight1, a.highlight2{
+  color: #333;
+  padding: 0 10px;
+  }
+a.highlight1:hover {
+  background-color: #F8A82D;
+  }
+a.highlight2:hover {
+  color: #F8A82D;
+  }
+/* active link */
+a.highlight1:active {
+  color: #FF0064;
+  }  
+ /* ---------------- p tag tooltip hover ---------------- */ 
+.hoverdiv p {
+  display: none;
+  background-color: #444;
+  color: #F96792;
+  padding: 20px;
+  }
+div .hoverdiv {
+  font-size: small;
+  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+div .hoverdiv:hover p{
+  display: block;
+  }
+  /* ---------------- hover on div ---------------- */  
+div .mouseover {
+  background-color: #222;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  }
+div .mouseover:hover {
+  background-color: #F8A82D;
+  color: #555;
+  }
+  /* ---------------- p:first-child ---------------- */
+.firstchild p:first-child {
+  color: #F96792;
+  } 
+  /* --- Match the first <i> element in all <p> elements ---*/
+.matchingi p i:first-child {
+  color: #F8A82D;
+  }
+  /* --- Match all <i> elements in all first child <p> elements --- */
+.matching p:first-child i {
+  color: #F8A82D;
+  }
+  /* ---------------- :lang Pseudo-class ---------------- */
+q:lang(no) {
+  quotes: "~" "~";
+  }
+  /* ---------------- :checked Selector ---------------- */
+input:checked {
+  height: 12px;
+  width: 12px;
+  }
+  /* ---------------- :disabled Selector ---------------- */
+input[type=text]:enabled {
+  background: #fff;
+  }
+input[type=text]:disabled {
+  background: #F8A82D;
+  }
+  /* ---------------- :empty Selector ---------------- */
+p:empty {
+  width: 100px;
+  height: 20px;
+  background: #FF6A00;
+  }
+  /* ---------------- :first-of-type Selector ---------------- */
+.firsttype p:first-of-type {
+  background: #F96792;
+  }
+  /* ---------------- :focus Selector ---------------- */
+.focus input:focus {
+  background-color: #F8A82D;
+  }
+  /* ---------------- :in-range Selector ---------------- */
+.inrange input:in-range {
+  border: 2px solid #F96792;
+  }
+  /* ---------------- :invalid Selector ---------------- */
+input:invalid {
+  border: 2px solid #F96792;
+  }
+  /* ---------------- :lang Selector ---------------- */
+p:lang(it) {
+  background: #F96792;
+  }
+  /* ---------------- :last-child Selector ---------------- */
+.last_child p:last-child {
+   background: #81B475;
+   }
+  /* ---------------- :last-of-type Selector ---------------- */
+.last_of_type p:last-of-type {
+  background: #81B475;
+  }
+  /* ---------------- :link Selector ---------------- */
+.link a:link { 
+  background-color: #B676F8;
+  color: #80E232;
+  padding: 2px;
+  }
+  /* ---------------- :not Selector ---------------- */
+.notselcting p {
+  color: #81B475;
+  }
+.notselcting :not(p) {
+  color: #F96792;
+  }
+  /* ---------------- :nth-child() Selector ---------------- */
+.nthchild p:nth-child(2) {
+  background: #F96792;
+  }
+  /* ---------------- :nth-last-child() Selector ---------------- */
+.nthlastchild p:nth-last-child(3) {
+    background: #F96792;
+}
+  /* ---------------- :nth-last-of-type() Selector ---------------- */
+  /* ---------------- :nth-of-type() Selector ---------------- */
+  /* ---------------- :only-of-type Selector ---------------- */
+  /* ---------------- :only-child Selector ---------------- */
+  /* ---------------- :optional Selector ---------------- */
+  /* ---------------- :out-of-range Selector ---------------- */
+  /* ---------------- :read-only Selector ---------------- */
+  /* ---------------- :read-write Selector ---------------- */
+  /* ---------------- :required Selector ---------------- */
+  /* ---------------- :root Selector ---------------- */
+  /* ---------------- :target Selector ---------------- */
+  /* ---------------- :valid Selector ---------------- */
+  /* ---------------- :visited Selector ---------------- */
+
